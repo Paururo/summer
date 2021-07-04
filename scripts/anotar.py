@@ -64,7 +64,7 @@ def main():
     try:
         install(pandas)
     except:
-        print("El paquente pandas ya esta instalado")
+        print("El paquete pandas ya esta instalado")
     args = parse_args()
     clean_VCF(args)
     anotarSnpEff(args)
