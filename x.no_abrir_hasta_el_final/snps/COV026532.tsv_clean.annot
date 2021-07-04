@@ -1,0 +1,16 @@
+POS	REF	ALT	ANNOT	TYPE	GENE	AA
+241	C	T	ANN=T	intergenic_region	CHR_START-ORF1ab	
+2706	C	T	ANN=T	missense_variant	ORF1ab	p.Thr814Ile
+3037	C	T	ANN=T	synonymous_variant	ORF1ab	p.Phe924Phe
+11417	G	T	ANN=T	missense_variant	ORF1ab	p.Val3718Phe
+14247	T	C	ANN=C	synonymous_variant	ORF1ab	p.Asp4661Asp
+14408	C	T	ANN=T	missense_variant	ORF1ab	p.Pro4715Leu
+20268	A	G	ANN=G	synonymous_variant	ORF1ab	p.Leu6668Leu
+22673	T	C	ANN=C	missense_variant	S	p.Ser371Pro
+23403	A	G	ANN=G	missense_variant	S	p.Asp614Gly
+25038	A	T	ANN=T	missense_variant	S	p.His1159Leu
+25152	T	A	ANN=A	missense_variant	S	p.Leu1197His
+25731	C	T	ANN=T	synonymous_variant	ORF3a	p.Tyr113Tyr
+26257	G	T	ANN=T	missense_variant	E	p.Val5Phe
+28253	C	T	ANN=T	synonymous_variant	ORF8	p.Phe120Phe
+28833	C	T	ANN=T	missense_variant	N	p.Ser187Leu

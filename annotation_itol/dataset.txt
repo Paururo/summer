@@ -1,0 +1,85 @@
+DATASET_COLORSTRIP
+#In colored strip datasets, each ID is associated to a color box_strip and can have an optional label. Color can be specified in hexadecimal, RGB or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+SEPARATOR TAB
+#SEPARATOR COMMA
+#SEPARATOR SPACE
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL	Dataset
+
+#dataset color (can be changed later)
+COLOR	#22a0d6
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+#When all children of a node have the same color, it will be colored the same, ie. the color will propagate inwards towards the root.
+COLOR_BRANCHES	1
+
+#each dataset can have a legend, which is defined below
+#for each row in the legend, there should be one shape, color and label
+#shape should be a number between 1 and 6:
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+LEGEND_TITLE	Dataset
+LEGEND_SHAPES	1	1	1
+LEGEND_COLORS	#ff0000	#ede900	#00ff15
+LEGEND_LABELS	LongCOVID	Brote	Linajes
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#width of the colored strip
+#STRIP_WIDTH 25
+
+#left margin, used to increase_decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN 0
+
+#border width_ if set above 0, a border of specified width (in pixels) will be drawn around the color strip 
+#BORDER_WIDTH 0
+
+#border color_ used when BORDER_WIDTH is above 0
+#BORDER_COLOR #0000ff
+
+#always show internal values_ if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL 0
+
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+COV026530	#ff0000	LongCOVID
+COV026531	#ff0000	LongCOVID
+COV026532	#ff0000	LongCOVID
+COV013139	#ede900	Brote
+COV013142	#ede900	Brote
+COV013146	#ede900	Brote
+COV013148	#ede900	Brote
+COV013149	#ede900	Brote
+COV000423	#00ff15	Linajes
+COV002807	#00ff15	Linajes
+COV007337	#00ff15	Linajes
+COV011905	#00ff15	Linajes
+COV012580	#00ff15	Linajes
+COV025514	#00ff15	Linajes
+COV028678	#00ff15	Linajes
+COV028693	#00ff15	Linajes

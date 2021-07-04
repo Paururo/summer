@@ -1,0 +1,112 @@
+DATASET_COLORSTRIP
+#In colored strip datasets, each ID is associated to a color box_strip and can have an optional label. Color can be specified in hexadecimal, RGB or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+SEPARATOR TAB
+#SEPARATOR COMMA
+#SEPARATOR SPACE
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL	Linajes
+
+#dataset color (can be changed later)
+COLOR	#22a0d6
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+#When all children of a node have the same color, it will be colored the same, ie. the color will propagate inwards towards the root.
+COLOR_BRANCHES	1
+
+#each dataset can have a legend, which is defined below
+#for each row in the legend, there should be one shape, color and label
+#shape should be a number between 1 and 6:
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+LEGEND_TITLE	Linajes
+LEGEND_SHAPES	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+LEGEND_COLORS	#7db2ba	#ba7db9	#33b002	#588745	#823b81	#8c2041	#2b44ff	#cf9d67	#ff9726	#c8cf67	#ffa3f1	#d9a3ff	#a3ffd9	#a3dbff	#239695	#6fb39d	#afbdb8	#606353	#c9a626	#26acff	#2be3ff	#a8ff26	#ff26f8	#41447d	#8c478f	#418a43	#d13d96	#1a8787	#486d85
+LEGEND_LABELS	A.11	A.5	B.1	B.1.1	B.1.1.306	B.1.1.519	B.1.1.7	B.1.111	B.1.177	B.1.2	B.1.202	B.1.243	B.1.258.2	B.1.351	B.1.36	B.1.380	B.1.429	B.1.497	B.1.499	B.1.525	B.1.526	B.1.574	B.1.617	B.55	B.6	C.12	C.16	N.5	P.1
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#width of the colored strip
+#STRIP_WIDTH 25
+
+#left margin, used to increase_decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN 0
+
+#border width_ if set above 0, a border of specified width (in pixels) will be drawn around the color strip 
+#BORDER_WIDTH 0
+
+#border color_ used when BORDER_WIDTH is above 0
+#BORDER_COLOR #0000ff
+
+#always show internal values_ if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL 0
+
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+hCoV-19_New_Zealand_20VR3131_2020_EPI_ISL_1250695_2020-06-16	#7db2ba	A.11
+hCoV-19_Bolivia_26958_2020_EPI_ISL_837576_2020-03-31	#ba7db9	A.5
+hCoV-19_Saudi_Arabia_KAUST-Makkah139_2020_EPI_ISL_437694_2020-03-24	#33b002	B.1
+hCoV-19_Bahrain_023232093_2020_EPI_ISL_487274_2020-06-24	#588745	B.1.1
+hCoV-19_Peru_LIM-INS-856_2020_EPI_ISL_1534636_2020-12-10	#588745	B.1.1
+hCoV-19_Peru_LOR-INS-607_2020_EPI_ISL_1111499_2020-12-17	#588745	B.1.1
+hCoV-19_Portugal_PT1608_2020_EPI_ISL_693611_2020-07-07	#588745	B.1.1
+hCoV-19_Bahrain_920455400_2020_EPI_ISL_682306_2020-10-11	#823b81	B.1.1.306
+hCoV-19_Mexico_TAM_LANGEBIO_IMSS_0098_2021_EPI_ISL_1351688_2021-03-07	#8c2041	B.1.1.519
+hCoV-19_USA_NY-Wadsworth-21013984-01_2020_EPI_ISL_1228072_2020-12-26	#8c2041	B.1.1.519
+hCoV-19_Croatia_HRV000_205_2021_EPI_ISL_1195673_2021-01-21	#2b44ff	B.1.1.7
+hCoV-19_Germany_TH-RKI-I-015306_2021_EPI_ISL_1145468_2021-01-31	#2b44ff	B.1.1.7
+hCoV-19_Japan_PG-34117_2021_EPI_ISL_1933525_2021-03-28	#2b44ff	B.1.1.7
+hCoV-19_Sweden_14088600P_2021_EPI_ISL_1420522_2021-02-04	#2b44ff	B.1.1.7
+hCoV-19_Trinidad_and_Tobago_TT2158_2020_EPI_ISL_756362_2020-08-26	#cf9d67	B.1.111
+hCoV-19_Belgium_ULG-11483_2020_EPI_ISL_925438_2020-09-19	#ff9726	B.1.177
+hCoV-19_USA_OK-CDC-2-3980587_2021_EPI_ISL_1272812_2021-02-22	#c8cf67	B.1.2
+hCoV-19_USA_VA-DCLS-2129_2020_EPI_ISL_677154_2020-10-28	#c8cf67	B.1.2
+hCoV-19_Italy_LAZ-INMI-77_2020_EPI_ISL_603184_2020-05-23	#ffa3f1	B.1.202
+hCoV-19_Canada_ABPHL-04132_2020_EPI_ISL_2164110_2020-11-22	#d9a3ff	B.1.243
+hCoV-19_Ireland_G-NVRL-78IRL74224_2020_EPI_ISL_752566_2020-11-23	#a3ffd9	B.1.258.2
+hCoV-19_Botswana_R16B79_BHP_CV1602956_2021_EPI_ISL_2372392_2021-03-05	#a3dbff	B.1.351
+hCoV-19_Eswatini_N4795_2021_EPI_ISL_1827698_2021-02-23	#a3dbff	B.1.351
+hCoV-19_Iran_46732_2020_EPI_ISL_847827_2020-11-09	#239695	B.1.36
+hCoV-19_Rwanda_NRLNAT2056_2020_EPI_ISL_960300_2020-07-30	#6fb39d	B.1.380
+hCoV-19_USA_WV-WVU-WV029583_2021_EPI_ISL_1423060_2021-02-23	#afbdb8	B.1.429
+hCoV-19_South_Korea_KDCA0873_2020_EPI_ISL_955971_2020-11-16	#606353	B.1.497
+hCoV-19_Argentina_PAIS-G0173_2020_EPI_ISL_1396103_2020-07-09	#c9a626	B.1.499
+hCoV-19_Ghana_WACCBIP-TRA649_2020_EPI_ISL_2285841_2021-04-04	#26acff	B.1.525
+hCoV-19_Nigeria_NCDC-FCT-10G_2021_EPI_ISL_1073639_2021-02-03	#26acff	B.1.525
+hCoV-19_Chile_VS-43946_2021_EPI_ISL_1321493_2021-02-19	#2be3ff	B.1.526
+hCoV-19_USA_DC-DFS-PHL-0448_2021_EPI_ISL_2100153_2021-04-20	#2be3ff	B.1.526
+hCoV-19_USA_MI-MDHHS-SC21178_2020_EPI_ISL_507435_2020-07-06	#a8ff26	B.1.574
+hCoV-19_Australia_NSW-R0220_2021_EPI_ISL_1756027_2021-04-23	#ff26f8	B.1.617
+hCoV-19_Australia_SA0476_2020_EPI_ISL_510542_2020-07-31	#ff26f8	B.1.617
+hCoV-19_Australia_WA639_2021_EPI_ISL_1366739_2021-03-18	#ff26f8	B.1.617
+hCoV-19_New_Zealand_CoV001_2020_EPI_ISL_417211_2020-03-11	#41447d	B.55
+hCoV-19_Taiwan_NTU28_2020_EPI_ISL_447622_2020-04-27	#8c478f	B.6
+hCoV-19_New_Zealand_20CV0157_2020_EPI_ISL_548031_2020-08-20	#418a43	C.12
+hCoV-19_Angola_KRISP-K009793_2021_EPI_ISL_1347943_2021-02-17	#d13d96	C.16
+hCoV-19_Argentina_PAIS-G0194_2021_EPI_ISL_2007558_2021-03-15	#1a8787	N.5
+hCoV-19_Argentina_INEI104596_2021_EPI_ISL_2158754_2021-05-05	#486d85	P.1
+hCoV-19_Brazil_GO-HLAGYN-1570992_2021_EPI_ISL_2017429.2_2021-03-25	#486d85	P.1

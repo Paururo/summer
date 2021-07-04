@@ -1,0 +1,297 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: aln.longcovid.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 740812
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 47 sequences with 29903 nucleotide sites
+Number of constant sites: 29427 (= 98.4082% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 29427 (= 98.4082% of all sites)
+Number of parsimony informative sites: 144
+Number of distinct site patterns: 700
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F
+
+Rate parameter R:
+
+  A-C: 0.2784
+  A-G: 0.8886
+  A-T: 0.1588
+  C-G: 0.2884
+  C-T: 2.8906
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2988
+  pi(C) = 0.1835
+  pi(G) = 0.1963
+  pi(T) = 0.3214
+
+Rate matrix Q:
+
+  A   -0.4234   0.07823     0.267   0.07812
+  C    0.1274    -1.636   0.08667     1.422
+  G    0.4065   0.08103   -0.9796     0.492
+  T   0.07263    0.8121    0.3005    -1.185
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -45570.4010 (s.e. 228.4602)
+Unconstrained log-likelihood (without tree): -87191.5024
+Number of free parameters (#branches + #model parameters): 99
+Akaike information criterion (AIC) score: 91338.8019
+Corrected Akaike information criterion (AICc) score: 91339.4663
+Bayesian information criterion (BIC) score: 92161.0676
+
+Total tree length (sum of branch lengths): 0.0180
+Sum of internal branch lengths: 0.0049 (27.0852% of tree length)
+
+WARNING: 19 near-zero internal branches (<0.0000) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'MN908947' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**MN908947
+|
+|                                             +--hCoV-19_Nigeria_NCDC-FCT-10G_2021|EPI_ISL_1073639|2021-02-03
+|              +------------------------------| (100)
+|              |                              +-----hCoV-19_Ghana_WACCBIP-TRA649_2020|EPI_ISL_2285841|2021-04-04
+|           +**| (80)
+|           |  |            +-----------------------------hCoV-19_Australia_NSW-R0220_2021|EPI_ISL_1756027|2021-04-23
+|           |  +------------| (100)
+|           |               +------------------------hCoV-19_Australia_WA639_2021|EPI_ISL_1366739|2021-03-18
+|        +**| (79)
+|        |  |        +---------hCoV-19_Canada_ABPHL-04132_2020|EPI_ISL_2164110|2020-11-22
+|        |  |     +**| (74)
+|        |  |     |  |  +----------------hCoV-19_Ireland_G-NVRL-78IRL74224_2020|EPI_ISL_752566|2020-11-23
+|        |  |     |  +--| (90)
+|        |  |     |     |              +**COV026530
+|        |  |     |     |           +**| (92)
+|        |  |     |     |           |  +---COV026532
+|        |  |     |     +-----------| (100)
+|        |  |     |                 +**COV026531
+|        |  |  +**| (36)
+|        |  |  |  +-------------hCoV-19_Belgium_ULG-11483_2020|EPI_ISL_925438|2020-09-19
+|        |  +**| (29)
+|        |     +------hCoV-19_Rwanda_NRLNAT2056_2020|EPI_ISL_960300|2020-07-30
+|     +**| (62)
+|     |  |                 +----------------------------------------hCoV-19_USA_WV-WVU-WV029583_2021|EPI_ISL_1423060|2021-02-23
+|     |  |              +--| (54)
+|     |  |              |  |                   +--hCoV-19_Botswana_R16B79_BHP_CV1602956_2021|EPI_ISL_2372392|2021-03-05
+|     |  |              |  +-------------------| (100)
+|     |  |              |                      +--------hCoV-19_Eswatini_N4795_2021|EPI_ISL_1827698|2021-02-23
+|     |  |           +**| (52)
+|     |  |           |  |     +--------------------------------------hCoV-19_USA_DC-DFS-PHL-0448_2021|EPI_ISL_2100153|2021-04-20
+|     |  |           |  +-----| (55)
+|     |  |           |        +----------------hCoV-19_Chile_VS-43946_2021|EPI_ISL_1321493|2021-02-19
+|     |  |        +**| (46)
+|     |  |        |  +----------------hCoV-19_USA_MI-MDHHS-SC21178_2020|EPI_ISL_507435|2020-07-06
+|     |  |     +**| (41)
+|     |  |     |  |  +----------hCoV-19_Argentina_PAIS-G0173_2020|EPI_ISL_1396103|2020-07-09
+|     |  |     |  +--| (85)
+|     |  |     |     +--------------hCoV-19_South_Korea_KDCA0873_2020|EPI_ISL_955971|2020-11-16
+|     |  |  +--| (93)
+|     |  |  |  |          +---------------------hCoV-19_USA_OK-CDC-2-3980587_2021|EPI_ISL_1272812|2021-02-22
+|     |  |  |  +----------| (100)
+|     |  |  |             +-------------hCoV-19_USA_VA-DCLS-2129_2020|EPI_ISL_677154|2020-10-28
+|     |  +--| (90)
+|     |     |     +------------hCoV-19_Iran_46732_2020|EPI_ISL_847827|2020-11-09
+|     |     |  +--| (92)
+|     |     |  |  +--------hCoV-19_Trinidad_and_Tobago_TT2158_2020|EPI_ISL_756362|2020-08-26
+|     |     +--| (90)
+|     |        +--hCoV-19_Saudi_Arabia_KAUST-Makkah139_2020|EPI_ISL_437694|2020-03-24
++-----| (100)
+|     |                                                      +------hCoV-19_Brazil_GO-HLAGYN-1570992_2021|EPI_ISL_2017429.2|2021-03-25
+|     |               +--------------------------------------| (100)
+|     |               |                                      +-----hCoV-19_Argentina_INEI104596_2021|EPI_ISL_2158754|2021-05-05
+|     |            +**| (21)
+|     |            |  +--hCoV-19_Portugal_PT1608_2020|EPI_ISL_693611|2020-07-07
+|     |         +**| (5)
+|     |         |  +-------------hCoV-19_Australia_SA0476_2020|EPI_ISL_510542|2020-07-31
+|     |      +**| (8)
+|     |      |  |  +-------------------------------------------hCoV-19_Argentina_PAIS-G0194_2021|EPI_ISL_2007558|2021-03-15
+|     |      |  +**| (15)
+|     |      |     |     +---hCoV-19_New_Zealand_20CV0157_2020|EPI_ISL_548031|2020-08-20
+|     |      |     +-----| (95)
+|     |      |           +------------------------------hCoV-19_Angola_KRISP-K009793_2021|EPI_ISL_1347943|2021-02-17
+|     |   +**| (32)
+|     |   |  |     +-------------hCoV-19_Peru_LOR-INS-607_2020|EPI_ISL_1111499|2020-12-17
+|     |   |  |  +--| (78)
+|     |   |  |  |  +----------------------hCoV-19_Peru_LIM-INS-856_2020|EPI_ISL_1534636|2020-12-10
+|     |   |  +**| (17)
+|     |   |     |                    +-------------hCoV-19_Mexico_TAM_LANGEBIO_IMSS_0098_2021|EPI_ISL_1351688|2021-03-07
+|     |   |     |  +-----------------| (100)
+|     |   |     |  |                 +-----------------hCoV-19_USA_NY-Wadsworth-21013984-01_2020|EPI_ISL_1228072|2020-12-26
+|     |   |     +--| (69)
+|     |   |        |                              +--hCoV-19_Japan_PG-34117_2021|EPI_ISL_1933525|2021-03-28
+|     |   |        +------------------------------| (100)
+|     |   |                                       |  +--------hCoV-19_Sweden_14088600P_2021|EPI_ISL_1420522|2021-02-04
+|     |   |                                       +--| (67)
+|     |   |                                          |  +--------hCoV-19_Germany_TH-RKI-I-015306_2021|EPI_ISL_1145468|2021-01-31
+|     |   |                                          +--| (66)
+|     |   |                                             +--hCoV-19_Croatia_HRV000_205_2021|EPI_ISL_1195673|2021-01-21
+|     +---| (98)
+|         |     +----------------hCoV-19_Bahrain_023232093_2020|EPI_ISL_487274|2020-06-24
+|         |  +--| (85)
+|         |  |  +-----------hCoV-19_Bahrain_920455400_2020|EPI_ISL_682306|2020-10-11
+|         +**| (33)
+|            +---hCoV-19_Italy_LAZ-INMI-77_2020|EPI_ISL_603184|2020-05-23
+|
+|  +--------------hCoV-19_Taiwan_NTU28_2020|EPI_ISL_447622|2020-04-27
++**| (82)
+   |  +--hCoV-19_New_Zealand_CoV001_2020|EPI_ISL_417211|2020-03-11
+   +**| (81)
+      |  +-----hCoV-19_Bolivia_26958_2020|EPI_ISL_837576|2020-03-31
+      +--| (94)
+         +--------------hCoV-19_New_Zealand_20VR3131_2020|EPI_ISL_1250695|2020-06-16
+
+Tree in newick format:
+
+(MN908947:0.0000010000,(((((hCoV-19_Nigeria_NCDC-FCT-10G_2021|EPI_ISL_1073639|2021-02-03:0.0000727910,hCoV-19_Ghana_WACCBIP-TRA649_2020|EPI_ISL_2285841|2021-04-04:0.0001472365)100:0.0006713459,(hCoV-19_Australia_NSW-R0220_2021|EPI_ISL_1756027|2021-04-23:0.0006536435,hCoV-19_Australia_WA639_2021|EPI_ISL_1366739|2021-03-18:0.0005444293)100:0.0002906825)80:0.0000333779,(((hCoV-19_Canada_ABPHL-04132_2020|EPI_ISL_2164110|2020-11-22:0.0002192996,(hCoV-19_Ireland_G-NVRL-78IRL74224_2020|EPI_ISL_752566|2020-11-23:0.0003780411,((COV026530:0.0000010000,COV026532:0.0001003312)92:0.0000010000,COV026531:0.0000010000)100:0.0002637391)90:0.0000365743)74:0.0000010000,hCoV-19_Belgium_ULG-11483_2020|EPI_ISL_925438|2020-09-19:0.0003044771)36:0.0000010000,hCoV-19_Rwanda_NRLNAT2056_2020|EPI_ISL_960300|2020-07-30:0.0001682645)29:0.0000010000)79:0.0000010000,((((((hCoV-19_USA_WV-WVU-WV029583_2021|EPI_ISL_1423060|2021-02-23:0.0008725788,(hCoV-19_Botswana_R16B79_BHP_CV1602956_2021|EPI_ISL_2372392|2021-03-05:0.0000746361,hCoV-19_Eswatini_N4795_2021|EPI_ISL_1827698|2021-02-23:0.0002019245)100:0.0004329901)54:0.0000334422,(hCoV-19_USA_DC-DFS-PHL-0448_2021|EPI_ISL_2100153|2021-04-20:0.0008466115,hCoV-19_Chile_VS-43946_2021|EPI_ISL_1321493|2021-02-19:0.0003714148)55:0.0001337780)52:0.0000010000,hCoV-19_USA_MI-MDHHS-SC21178_2020|EPI_ISL_507435|2020-07-06:0.0003713993)46:0.0000010000,(hCoV-19_Argentina_PAIS-G0173_2020|EPI_ISL_1396103|2020-07-09:0.0002351442,hCoV-19_South_Korea_KDCA0873_2020|EPI_ISL_955971|2020-11-16:0.0003344907)85:0.0000334422)41:0.0000010000,(hCoV-19_USA_OK-CDC-2-3980587_2021|EPI_ISL_1272812|2021-02-22:0.0004683296,hCoV-19_USA_VA-DCLS-2129_2020|EPI_ISL_677154|2020-10-28:0.0003010348)100:0.0002341275)93:0.0000334422,((hCoV-19_Iran_46732_2020|EPI_ISL_847827|2020-11-09:0.0002809799,hCoV-19_Trinidad_and_Tobago_TT2158_2020|EPI_ISL_756362|2020-08-26:0.0002043047)92:0.0000394860,hCoV-19_Saudi_Arabia_KAUST-Makkah139_2020|EPI_ISL_437694|2020-03-24:0.0000668860)90:0.0000334422)90:0.0000334422)62:0.0000010000,((((((hCoV-19_Brazil_GO-HLAGYN-1570992_2021|EPI_ISL_2017429.2|2021-03-25:0.0001682917,hCoV-19_Argentina_INEI104596_2021|EPI_ISL_2158754|2021-05-05:0.0001401302)100:0.0008349879,hCoV-19_Portugal_PT1608_2020|EPI_ISL_693611|2020-07-07:0.0000334422)21:0.0000010000,hCoV-19_Australia_SA0476_2020|EPI_ISL_510542|2020-07-31:0.0003010348)5:0.0000010000,(hCoV-19_Argentina_PAIS-G0194_2021|EPI_ISL_2007558|2021-03-15:0.0009407157,(hCoV-19_New_Zealand_20CV0157_2020|EPI_ISL_548031|2020-08-20:0.0001015955,hCoV-19_Angola_KRISP-K009793_2021|EPI_ISL_1347943|2021-02-17:0.0006764565)95:0.0001337780)15:0.0000010000)8:0.0000010000,((hCoV-19_Peru_LOR-INS-607_2020|EPI_ISL_1111499|2020-12-17:0.0003010348,hCoV-19_Peru_LIM-INS-856_2020|EPI_ISL_1534636|2020-12-10:0.0005081902)78:0.0000334422,((hCoV-19_Mexico_TAM_LANGEBIO_IMSS_0098_2021|EPI_ISL_1351688|2021-03-07:0.0003028359,hCoV-19_USA_NY-Wadsworth-21013984-01_2020|EPI_ISL_1228072|2020-12-26:0.0003852645)100:0.0003852927,(hCoV-19_Japan_PG-34117_2021|EPI_ISL_1933525|2021-03-28:0.0000334422,(hCoV-19_Sweden_14088600P_2021|EPI_ISL_1420522|2021-02-04:0.0002027348,(hCoV-19_Germany_TH-RKI-I-015306_2021|EPI_ISL_1145468|2021-01-31:0.0002006761,hCoV-19_Croatia_HRV000_205_2021|EPI_ISL_1195673|2021-01-21:0.0000334422)66:0.0000668860)67:0.0000668860)100:0.0006713782)69:0.0000334422)17:0.0000010000)32:0.0000010000,((hCoV-19_Bahrain_023232093_2020|EPI_ISL_487274|2020-06-24:0.0003692278,hCoV-19_Bahrain_920455400_2020|EPI_ISL_682306|2020-10-11:0.0002675804)85:0.0000334422,hCoV-19_Italy_LAZ-INMI-77_2020|EPI_ISL_603184|2020-05-23:0.0001003312)33:0.0000010000)98:0.0001003312)100:0.0001337780,(hCoV-19_Taiwan_NTU28_2020|EPI_ISL_447622|2020-04-27:0.0003344907,(hCoV-19_New_Zealand_CoV001_2020|EPI_ISL_417211|2020-03-11:0.0000668860,(hCoV-19_Bolivia_26958_2020|EPI_ISL_837576|2020-03-31:0.0001337780,hCoV-19_New_Zealand_20VR3131_2020|EPI_ISL_1250695|2020-06-16:0.0003193415)94:0.0000668860)81:0.0000010000)82:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -45570.957944
+Robinson-Foulds distance between ML tree and consensus tree: 16
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--MN908947
+|
+|                                                +--hCoV-19_Nigeria_NCDC-FCT-10G_2021|EPI_ISL_1073639|2021-02-03
+|                 +------------------------------| (100)
+|                 |                              +-----hCoV-19_Ghana_WACCBIP-TRA649_2020|EPI_ISL_2285841|2021-04-04
+|              +--| (80)
+|              |  |            +-----------------------------hCoV-19_Australia_NSW-R0220_2021|EPI_ISL_1756027|2021-04-23
+|              |  +------------| (100)
+|              |               +------------------------hCoV-19_Australia_WA639_2021|EPI_ISL_1366739|2021-03-18
+|           +--| (38)
+|           |  |     +---------hCoV-19_Canada_ABPHL-04132_2020|EPI_ISL_2164110|2020-11-22
+|           |  |  +--| (74)
+|           |  |  |  |  +----------------hCoV-19_Ireland_G-NVRL-78IRL74224_2020|EPI_ISL_752566|2020-11-23
+|           |  |  |  +--| (90)
+|           |  |  |     |              +--COV026530
+|           |  |  |     |           +**| (92)
+|           |  |  |     |           |  +---COV026532
+|           |  |  |     +-----------| (100)
+|           |  |  |                 +--COV026531
+|           |  +--| (27)
+|           |     +------hCoV-19_Rwanda_NRLNAT2056_2020|EPI_ISL_960300|2020-07-30
+|        +--| (79)
+|        |  +-------------hCoV-19_Belgium_ULG-11483_2020|EPI_ISL_925438|2020-09-19
+|     +--| (62)
+|     |  |                 +---------------------------------------hCoV-19_USA_WV-WVU-WV029583_2021|EPI_ISL_1423060|2021-02-23
+|     |  |              +--| (54)
+|     |  |              |  |                   +--hCoV-19_Botswana_R16B79_BHP_CV1602956_2021|EPI_ISL_2372392|2021-03-05
+|     |  |              |  +-------------------| (100)
+|     |  |              |                      +--------hCoV-19_Eswatini_N4795_2021|EPI_ISL_1827698|2021-02-23
+|     |  |           +--| (52)
+|     |  |           |  |     +--------------------------------------hCoV-19_USA_DC-DFS-PHL-0448_2021|EPI_ISL_2100153|2021-04-20
+|     |  |           |  +-----| (55)
+|     |  |           |        +----------------hCoV-19_Chile_VS-43946_2021|EPI_ISL_1321493|2021-02-19
+|     |  |        +--| (46)
+|     |  |        |  +----------------hCoV-19_USA_MI-MDHHS-SC21178_2020|EPI_ISL_507435|2020-07-06
+|     |  |     +--| (41)
+|     |  |     |  |  +----------hCoV-19_Argentina_PAIS-G0173_2020|EPI_ISL_1396103|2020-07-09
+|     |  |     |  +--| (85)
+|     |  |     |     +--------------hCoV-19_South_Korea_KDCA0873_2020|EPI_ISL_955971|2020-11-16
+|     |  |  +--| (93)
+|     |  |  |  |         +--------------------hCoV-19_USA_OK-CDC-2-3980587_2021|EPI_ISL_1272812|2021-02-22
+|     |  |  |  +---------| (100)
+|     |  |  |            +-------------hCoV-19_USA_VA-DCLS-2129_2020|EPI_ISL_677154|2020-10-28
+|     |  +--| (90)
+|     |     |     +------------hCoV-19_Iran_46732_2020|EPI_ISL_847827|2020-11-09
+|     |     |  +--| (92)
+|     |     |  |  +--------hCoV-19_Trinidad_and_Tobago_TT2158_2020|EPI_ISL_756362|2020-08-26
+|     |     +--| (90)
+|     |        +--hCoV-19_Saudi_Arabia_KAUST-Makkah139_2020|EPI_ISL_437694|2020-03-24
++-----| (100)
+|     |                                                +------hCoV-19_Brazil_GO-HLAGYN-1570992_2021|EPI_ISL_2017429.2|2021-03-25
+|     |         +--------------------------------------| (100)
+|     |         |                                      +-----hCoV-19_Argentina_INEI104596_2021|EPI_ISL_2158754|2021-05-05
+|     |      +--| (27)
+|     |      |  |     +---hCoV-19_New_Zealand_20CV0157_2020|EPI_ISL_548031|2020-08-20
+|     |      |  +-----| (95)
+|     |      |        +------------------------------hCoV-19_Angola_KRISP-K009793_2021|EPI_ISL_1347943|2021-02-17
+|     |   +--| (37)
+|     |   |  |     +-------------hCoV-19_Australia_SA0476_2020|EPI_ISL_510542|2020-07-31
+|     |   |  |  +--| (26)
+|     |   |  |  |  |  +-------------------------------------------hCoV-19_Argentina_PAIS-G0194_2021|EPI_ISL_2007558|2021-03-15
+|     |   |  |  |  +--| (26)
+|     |   |  |  |     |  +--hCoV-19_Portugal_PT1608_2020|EPI_ISL_693611|2020-07-07
+|     |   |  |  |     +--| (37)
+|     |   |  |  |        +---hCoV-19_Italy_LAZ-INMI-77_2020|EPI_ISL_603184|2020-05-23
+|     |   |  +--| (20)
+|     |   |     |     +-------------hCoV-19_Peru_LOR-INS-607_2020|EPI_ISL_1111499|2020-12-17
+|     |   |     |  +--| (78)
+|     |   |     |  |  +----------------------hCoV-19_Peru_LIM-INS-856_2020|EPI_ISL_1534636|2020-12-10
+|     |   |     +--| (17)
+|     |   |        |                    +-------------hCoV-19_Mexico_TAM_LANGEBIO_IMSS_0098_2021|EPI_ISL_1351688|2021-03-07
+|     |   |        |  +-----------------| (100)
+|     |   |        |  |                 +-----------------hCoV-19_USA_NY-Wadsworth-21013984-01_2020|EPI_ISL_1228072|2020-12-26
+|     |   |        +--| (69)
+|     |   |           |                              +--hCoV-19_Japan_PG-34117_2021|EPI_ISL_1933525|2021-03-28
+|     |   |           +------------------------------| (100)
+|     |   |                                          |  +--------hCoV-19_Sweden_14088600P_2021|EPI_ISL_1420522|2021-02-04
+|     |   |                                          +--| (67)
+|     |   |                                             |  +--------hCoV-19_Germany_TH-RKI-I-015306_2021|EPI_ISL_1145468|2021-01-31
+|     |   |                                             +--| (66)
+|     |   |                                                +--hCoV-19_Croatia_HRV000_205_2021|EPI_ISL_1195673|2021-01-21
+|     +---| (98)
+|         |  +----------------hCoV-19_Bahrain_023232093_2020|EPI_ISL_487274|2020-06-24
+|         +--| (85)
+|            +-----------hCoV-19_Bahrain_920455400_2020|EPI_ISL_682306|2020-10-11
+|
+|  +--------------hCoV-19_Taiwan_NTU28_2020|EPI_ISL_447622|2020-04-27
++--| (82)
+   |  +--hCoV-19_New_Zealand_CoV001_2020|EPI_ISL_417211|2020-03-11
+   +--| (81)
+      |  +-----hCoV-19_Bolivia_26958_2020|EPI_ISL_837576|2020-03-31
+      +--| (94)
+         +-------------hCoV-19_New_Zealand_20VR3131_2020|EPI_ISL_1250695|2020-06-16
+
+
+Consensus tree in newick format: 
+
+(MN908947:0.0000020138,((((((hCoV-19_Nigeria_NCDC-FCT-10G_2021|EPI_ISL_1073639|2021-02-03:0.0000733283,hCoV-19_Ghana_WACCBIP-TRA649_2020|EPI_ISL_2285841|2021-04-04:0.0001472152)100:0.0006706729,(hCoV-19_Australia_NSW-R0220_2021|EPI_ISL_1756027|2021-04-23:0.0006533416,hCoV-19_Australia_WA639_2021|EPI_ISL_1366739|2021-03-18:0.0005444322)100:0.0002892847)80:0.0000339430,((hCoV-19_Canada_ABPHL-04132_2020|EPI_ISL_2164110|2020-11-22:0.0002192995,(hCoV-19_Ireland_G-NVRL-78IRL74224_2020|EPI_ISL_752566|2020-11-23:0.0003780547,((COV026530:0.0000020138,COV026532:0.0001003312)92:0.0000013928,COV026531:0.0000020138)100:0.0002625091)90:0.0000348888)74:0.0000026524,hCoV-19_Rwanda_NRLNAT2056_2020|EPI_ISL_960300|2020-07-30:0.0001682644)27:0.0000020138)38:0.0000020138,hCoV-19_Belgium_ULG-11483_2020|EPI_ISL_925438|2020-09-19:0.0003044771)79:0.0000020138,((((((hCoV-19_USA_WV-WVU-WV029583_2021|EPI_ISL_1423060|2021-02-23:0.0008725712,(hCoV-19_Botswana_R16B79_BHP_CV1602956_2021|EPI_ISL_2372392|2021-03-05:0.0000748397,hCoV-19_Eswatini_N4795_2021|EPI_ISL_1827698|2021-02-23:0.0002019152)100:0.0004325214)54:0.0000334422,(hCoV-19_USA_DC-DFS-PHL-0448_2021|EPI_ISL_2100153|2021-04-20:0.0008461096,hCoV-19_Chile_VS-43946_2021|EPI_ISL_1321493|2021-02-19:0.0003719282)55:0.0001337780)52:0.0000020138,hCoV-19_USA_MI-MDHHS-SC21178_2020|EPI_ISL_507435|2020-07-06:0.0003713988)46:0.0000020138,(hCoV-19_Argentina_PAIS-G0173_2020|EPI_ISL_1396103|2020-07-09:0.0002351441,hCoV-19_South_Korea_KDCA0873_2020|EPI_ISL_955971|2020-11-16:0.0003344907)85:0.0000334422)41:0.0000020138,(hCoV-19_USA_OK-CDC-2-3980587_2021|EPI_ISL_1272812|2021-02-22:0.0004683296,hCoV-19_USA_VA-DCLS-2129_2020|EPI_ISL_677154|2020-10-28:0.0003010348)100:0.0002341275)93:0.0000334422,((hCoV-19_Iran_46732_2020|EPI_ISL_847827|2020-11-09:0.0002809890,hCoV-19_Trinidad_and_Tobago_TT2158_2020|EPI_ISL_756362|2020-08-26:0.0002044648)92:0.0000393398,hCoV-19_Saudi_Arabia_KAUST-Makkah139_2020|EPI_ISL_437694|2020-03-24:0.0000668860)90:0.0000334422)90:0.0000334422)62:0.0000020138,((((hCoV-19_Brazil_GO-HLAGYN-1570992_2021|EPI_ISL_2017429.2|2021-03-25:0.0001682628,hCoV-19_Argentina_INEI104596_2021|EPI_ISL_2158754|2021-05-05:0.0001402679)100:0.0008340167,(hCoV-19_New_Zealand_20CV0157_2020|EPI_ISL_548031|2020-08-20:0.0001015954,hCoV-19_Angola_KRISP-K009793_2021|EPI_ISL_1347943|2021-02-17:0.0006764560)95:0.0001337780)27:0.0000020138,((hCoV-19_Australia_SA0476_2020|EPI_ISL_510542|2020-07-31:0.0003010348,(hCoV-19_Argentina_PAIS-G0194_2021|EPI_ISL_2007558|2021-03-15:0.0009407153,(hCoV-19_Portugal_PT1608_2020|EPI_ISL_693611|2020-07-07:0.0000334422,hCoV-19_Italy_LAZ-INMI-77_2020|EPI_ISL_603184|2020-05-23:0.0001003312)37:0.0000020138)26:0.0000020138)26:0.0000020138,((hCoV-19_Peru_LOR-INS-607_2020|EPI_ISL_1111499|2020-12-17:0.0003010348,hCoV-19_Peru_LIM-INS-856_2020|EPI_ISL_1534636|2020-12-10:0.0005081905)78:0.0000334422,((hCoV-19_Mexico_TAM_LANGEBIO_IMSS_0098_2021|EPI_ISL_1351688|2021-03-07:0.0003028298,hCoV-19_USA_NY-Wadsworth-21013984-01_2020|EPI_ISL_1228072|2020-12-26:0.0003855302)100:0.0003854999,(hCoV-19_Japan_PG-34117_2021|EPI_ISL_1933525|2021-03-28:0.0000334422,(hCoV-19_Sweden_14088600P_2021|EPI_ISL_1420522|2021-02-04:0.0002027349,(hCoV-19_Germany_TH-RKI-I-015306_2021|EPI_ISL_1145468|2021-01-31:0.0002006761,hCoV-19_Croatia_HRV000_205_2021|EPI_ISL_1195673|2021-01-21:0.0000334422)66:0.0000668860)67:0.0000668860)100:0.0006713788)69:0.0000334422)17:0.0000020138)20:0.0000020138)37:0.0000020138,(hCoV-19_Bahrain_023232093_2020|EPI_ISL_487274|2020-06-24:0.0003692278,hCoV-19_Bahrain_920455400_2020|EPI_ISL_682306|2020-10-11:0.0002675804)85:0.0000334422)98:0.0001003312)100:0.0001337780,(hCoV-19_Taiwan_NTU28_2020|EPI_ISL_447622|2020-04-27:0.0003344907,(hCoV-19_New_Zealand_CoV001_2020|EPI_ISL_417211|2020-03-11:0.0000668860,(hCoV-19_Bolivia_26958_2020|EPI_ISL_837576|2020-03-31:0.0001337780,hCoV-19_New_Zealand_20VR3131_2020|EPI_ISL_1250695|2020-06-16:0.0003193414)94:0.0000668860)81:0.0000020138)82:0.0000020138);
+
+TIME STAMP
+----------
+
+Date and time: Sat Jul  3 10:23:37 2021
+Total CPU time used: 365.269008 seconds (0h:6m:5s)
+Total wall-clock time used: 192.1579769 seconds (0h:3m:12s)
+
